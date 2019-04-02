@@ -177,7 +177,7 @@ public class ArtisanHomePageActivity extends AppCompatActivity {
     }
 
     public void Logout(MenuItem item) {
-
+        //added by Sayan Biswas
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Logout Confirmation");
         builder.setMessage("Are you sure you want to logout?");
@@ -192,6 +192,7 @@ public class ArtisanHomePageActivity extends AppCompatActivity {
 
             }
         });
+        //Sayan ends here
 
         builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
             @Override

@@ -9,7 +9,7 @@ import android.os.AsyncTask;
 import com.github.sendgrid.SendGrid;
 
 import java.util.Hashtable;
-
+//added by Sayan Biswas
 public class SendGridAsyncTask extends AsyncTask<Hashtable<String, String>, Void, String> {
     @Override
     protected String doInBackground(Hashtable<String, String>... hashtables) {

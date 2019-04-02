@@ -28,7 +28,7 @@ import com.google.firebase.storage.FirebaseStorage;
 
 import java.util.HashMap;
 
-//Added Sayan Biswas
+//Added entirely by Sayan Biswas
 public class UserWalletActivity extends AppCompatActivity {
     private DrawerLayout user_wallet_page_dl;
     private ActionBarDrawerToggle abdt;

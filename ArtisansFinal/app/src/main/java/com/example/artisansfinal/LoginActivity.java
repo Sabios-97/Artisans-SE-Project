@@ -20,7 +20,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
+//added by Sayan Biswas
 public class LoginActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private EditText Name;
     private EditText Password;

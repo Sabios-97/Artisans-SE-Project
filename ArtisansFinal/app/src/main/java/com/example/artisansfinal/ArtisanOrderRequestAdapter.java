@@ -131,7 +131,7 @@ public class ArtisanOrderRequestAdapter extends RecyclerView.Adapter<ArtisanOrde
             viewHolder.card.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
         }
 
-
+        //added by Sayan Biswas
 
         databaseUsers= FirebaseDatabase.getInstance().getReference("User");
         databaseArtisans= FirebaseDatabase.getInstance().getReference("Artisans");
@@ -179,7 +179,7 @@ public class ArtisanOrderRequestAdapter extends RecyclerView.Adapter<ArtisanOrde
                     }
                 });
 
-
+        //Sayan ends here
         viewHolder.card.setOnClickListener(new View.OnClickListener() {
 
             private String artisanKey, userKey;
@@ -243,7 +243,7 @@ public class ArtisanOrderRequestAdapter extends RecyclerView.Adapter<ArtisanOrde
 
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-
+                            //added by Sayan Biswas
                             float f=Float.parseFloat(temp_ballance);
                             float t=Float.parseFloat(temp_productprice);
                             float a=Float.parseFloat(temp_ballance_artisan);
@@ -273,7 +273,7 @@ public class ArtisanOrderRequestAdapter extends RecyclerView.Adapter<ArtisanOrde
 
 
                             });
-
+                            //Sayan ends here
                             orderX.setC("g");
                             Log.d("HERE", "Val" + i);
                             viewHolder.card.setCardBackgroundColor(Color.parseColor("#76FF03"));
@@ -354,7 +354,7 @@ public class ArtisanOrderRequestAdapter extends RecyclerView.Adapter<ArtisanOrde
                             });
 
                         }
-
+                         //added by Sayan Biswas
                         private void sendMailUsingSendGrid(String from, String to, String subject, String mailBody){
                             Hashtable<String, String> params = new Hashtable<>();
                             params.put("to", to);
@@ -369,6 +369,7 @@ public class ArtisanOrderRequestAdapter extends RecyclerView.Adapter<ArtisanOrde
                                 e.printStackTrace();
                             }
                         }
+                        //Sayan ends here
 
 
 
@@ -377,7 +378,7 @@ public class ArtisanOrderRequestAdapter extends RecyclerView.Adapter<ArtisanOrde
                     builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-
+                            //added by Sayan Biswas
                             Handler handler = new Handler(Looper.getMainLooper());
                             handler.post(new Runnable() {
                                 @Override
@@ -391,7 +392,7 @@ public class ArtisanOrderRequestAdapter extends RecyclerView.Adapter<ArtisanOrde
                                     Toast.makeText(context,"Sending mail...", Toast.LENGTH_SHORT).show();
                                 }
                             });
-
+                            //Sayan ends here
 
                             orderX.setC("r");
                             viewHolder.card.setCardBackgroundColor(Color.parseColor("#E64A19"));
@@ -411,7 +412,7 @@ public class ArtisanOrderRequestAdapter extends RecyclerView.Adapter<ArtisanOrde
                             dialog.dismiss();
                         }
 
-
+                        //added by Sayan Biswas
                         private void sendMailUsingSendGrid(String from, String to, String subject, String mailBody){
                             Hashtable<String, String> params = new Hashtable<>();
                             params.put("to", to);
@@ -426,6 +427,7 @@ public class ArtisanOrderRequestAdapter extends RecyclerView.Adapter<ArtisanOrde
                                 e.printStackTrace();
                             }
                         }
+                        //Sayan ends here
                     });
 
 

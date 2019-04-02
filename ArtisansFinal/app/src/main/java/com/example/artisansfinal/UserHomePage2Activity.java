@@ -541,6 +541,7 @@ public class UserHomePage2Activity extends AppCompatActivity
             startActivity(i);
         } else if (id == R.id.nav_logout) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            //added by Sayan Biswas
             builder.setTitle("Logout Confirmation");
             builder.setMessage("Are you sure you want to logout?");
 
@@ -554,6 +555,7 @@ public class UserHomePage2Activity extends AppCompatActivity
 
                 }
             });
+            //Sayan ends here
 
             builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
                 @Override

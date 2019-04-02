@@ -1,5 +1,5 @@
 package com.example.artisansfinal;
-
+//added by Sayan Biswas
 public class UserInfo {
     public String userName;
     public String userPcode;
